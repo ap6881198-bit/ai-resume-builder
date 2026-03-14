@@ -7,11 +7,10 @@ let experience = document.getElementById("experience").value;
 
 let resume = `
 <h1>${name}</h1>
-
 <h2>${job}</h2>
 
 <h3>Skills</h3>
-<ul><li>${skills}</li></ul>
+<p>${skills}</p>
 
 <h3>Experience</h3>
 <p>${experience}</p>
@@ -19,6 +18,15 @@ let resume = `
 
 document.getElementById("resumeOutput").innerHTML = resume;
 
+}
+
+function downloadPDF(){
+
+let element = document.getElementById("resumeOutput");
+
+if(element.innerHTML === ""){
+alert("Please generate the resume first!");
+return;
 }
 
 html2pdf().from(element).save("My_Resume.pdf");
