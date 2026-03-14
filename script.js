@@ -6,8 +6,9 @@ let skills = document.getElementById("skills").value;
 let experience = document.getElementById("experience").value;
 
 let resume = `
-<h2>${name}</h2>
-<h3>${job}</h3>
+<h1>${name}</h1>
+
+<h2>${job}</h2>
 
 <h3>Skills</h3>
 <p>${skills}</p>
@@ -19,10 +20,6 @@ let resume = `
 document.getElementById("resumeOutput").innerHTML = resume;
 
 }
-
-function downloadPDF(){
-
-let element = document.getElementById("resumeOutput");
 
 html2pdf().from(element).save("My_Resume.pdf");
 
