@@ -11,7 +11,7 @@ let resume = `
 <h2>${job}</h2>
 
 <h3>Skills</h3>
-<p>${skills}</p>
+<ul><li>${skills}</li></ul>
 
 <h3>Experience</h3>
 <p>${experience}</p>
