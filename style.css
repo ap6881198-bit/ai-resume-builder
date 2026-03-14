@@ -1,6 +1,6 @@
 body{
 
-font-family:Arial;
+font-family: Arial;
 background:#f4f4f4;
 text-align:center;
 
@@ -18,7 +18,7 @@ box-shadow:0 5px 15px rgba(0,0,0,0.2);
 
 }
 
-input,textarea{
+input, textarea{
 
 width:100%;
 padding:10px;
@@ -33,5 +33,13 @@ color:white;
 border:none;
 padding:12px 20px;
 cursor:pointer;
+margin-top:10px;
+
+}
+
+#resumeOutput{
+
+margin-top:30px;
+text-align:left;
 
 }
